@@ -17,7 +17,7 @@ export const communities = defineType({
             type: 'slug',
             options: { source: 'name' },
             validation: (rule) => rule.required(),
-            description: 'name of community hyphen community. e.g ologbonugu-community (Important!)',
+            description: 'non-spaced url-friendly string. or click generate to quickly generate one (Important!)',
         }),
         defineField({
             name: 'description',

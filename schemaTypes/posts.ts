@@ -12,6 +12,17 @@ export const posts = defineType({
             validation: (rule) => rule.required()
         }),
         defineField({
+            name: 'slug',
+            title: 'Slug',
+            type: 'slug',
+            options: {
+              source: 'name',
+              maxLength: 96,
+            },
+            description: 'click generate to geerate a url-friendly slug for this post',
+            validation: Rule => Rule.required(),
+        }),
+        defineField({
             name: 'body',
             title: 'body',
             type: 'array',
