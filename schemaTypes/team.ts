@@ -16,7 +16,7 @@ export const team = defineType({
         }),
         defineField({
             name: 'photo',
-            type: 'photo',
+            type: 'image',
             options: { hotspot: true }
         }),
         defineField({
